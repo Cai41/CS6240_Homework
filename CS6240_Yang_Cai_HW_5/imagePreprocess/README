@@ -1,0 +1,8 @@
+1. To run the programe locally, first copy all image files into one folder
+2. Open Makefile, change local.input to the folder you just created
+3. Change local.xx, local.yy and local.zz to your preference, these are the dimension of neighborhood points
+4. Change local.sample.size to your preference, this is the sample size of final output
+5. "make alone" to run them locally
+6. After the program ends, there should be 2 output folders, one is output_result, which is json file 
+of all ${local.sample.siz}e points, another one is output_image, which contains pictures of one foreground
+and one background point. There should be (2 x local.zz) number of pictures, each of them is in one layer.

@@ -1,0 +1,6 @@
+To run the program:
+1.put the .bz2 files in the input directoty
+2.change the input directory in Makefile
+3."make alone" to run locally, 
+4.if run on emr, change the settings in Makefile(aws.subnet.id, aws.bucket.name)
+and so on, run "make cloud" to run on the cloud

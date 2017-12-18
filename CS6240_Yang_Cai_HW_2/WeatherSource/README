@@ -1,0 +1,21 @@
+First, put the input files into one folder, and make changes in the Makefile to modify
+local.input pointing to folder you just created.
+
+To run the no combiner version in standalone:
+make alone-nocombiner
+
+To run the with combiner version in standalone:
+make alone-withcombiner
+
+To run the in mapper combiner version in standalone:
+make alone-inmappercombiner
+
+To run the secondary sort in standalone:
+make alone-secondarysort
+
+To run on cloud, make changes to aws parameters such as s3 bucket, input, output, etc..
+And run one of following:
+make cloud-nocombiner
+make cloud-withcombiner
+make cloud-inmappercombiner
+make cloud-secondarysort

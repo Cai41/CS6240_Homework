@@ -1,0 +1,60 @@
+2017-11-16T22:58:44.042Z INFO Ensure step 2 jar file command-runner.jar
+2017-11-16T22:58:44.042Z INFO StepRunner: Created Runner for step 2
+INFO startExec 'hadoop jar /var/lib/aws/emr/step-runner/hadoop-jars/command-runner.jar spark-submit --deploy-mode cluster --executor-cores 2 --class cs6240.imagePreprocess.Preprocess --master yarn s3://cs6240-yang-cai/imagePreprocess-1.0-jar-with-dependencies.jar s3://cs6240-yang-cai/ s3://cs6240-yang-cai/input s3n://cs6240-yang-cai/output_result s3n://cs6240-yang-cai/output_image 21 21 7 12500'
+INFO Environment:
+  PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/sbin:/opt/aws/bin
+  LESS_TERMCAP_md=[01;38;5;208m
+  LESS_TERMCAP_me=[0m
+  HISTCONTROL=ignoredups
+  LESS_TERMCAP_mb=[01;31m
+  AWS_AUTO_SCALING_HOME=/opt/aws/apitools/as
+  UPSTART_JOB=rc
+  LESS_TERMCAP_se=[0m
+  HISTSIZE=1000
+  HADOOP_ROOT_LOGGER=INFO,DRFA
+  JAVA_HOME=/etc/alternatives/jre
+  AWS_DEFAULT_REGION=us-east-1
+  AWS_ELB_HOME=/opt/aws/apitools/elb
+  LESS_TERMCAP_us=[04;38;5;111m
+  EC2_HOME=/opt/aws/apitools/ec2
+  TERM=linux
+  XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+  runlevel=3
+  LANG=en_US.UTF-8
+  AWS_CLOUDWATCH_HOME=/opt/aws/apitools/mon
+  MAIL=/var/spool/mail/hadoop
+  LESS_TERMCAP_ue=[0m
+  LOGNAME=hadoop
+  PWD=/
+  LANGSH_SOURCED=1
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-1T3E37GWQTZL9/tmp
+  _=/etc/alternatives/jre/bin/java
+  CONSOLETYPE=serial
+  RUNLEVEL=3
+  LESSOPEN=||/usr/bin/lesspipe.sh %s
+  previous=N
+  UPSTART_EVENTS=runlevel
+  AWS_PATH=/opt/aws
+  USER=hadoop
+  UPSTART_INSTANCE=
+  PREVLEVEL=N
+  HADOOP_LOGFILE=syslog
+  PYTHON_INSTALL_LAYOUT=amzn
+  HOSTNAME=ip-172-31-71-7
+  NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-1T3E37GWQTZL9
+  EC2_AMITOOL_HOME=/opt/aws/amitools/ec2
+  SHLVL=5
+  HOME=/home/hadoop
+  HADOOP_IDENT_STRING=hadoop
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-1T3E37GWQTZL9/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-1T3E37GWQTZL9/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-1T3E37GWQTZL9
+INFO ProcessRunner started child process 8655 :
+hadoop    8655  4025  1 22:58 ?        00:00:00 /etc/alternatives/jre/bin/java -Xmx1000m -server -XX:OnOutOfMemoryError=kill -9 %p -Dhadoop.log.dir=/mnt/var/log/hadoop/steps/s-1T3E37GWQTZL9 -Dhadoop.log.file=syslog -Dhadoop.home.dir=/usr/lib/hadoop -Dhadoop.id.str=hadoop -Dhadoop.root.logger=INFO,DRFA -Djava.library.path=:/usr/lib/hadoop-lzo/lib/native:/usr/lib/hadoop/lib/native -Dhadoop.policy.file=hadoop-policy.xml -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-1T3E37GWQTZL9/tmp -Dhadoop.security.logger=INFO,NullAppender -Dsun.net.inetaddr.ttl=30 org.apache.hadoop.util.RunJar /var/lib/aws/emr/step-runner/hadoop-jars/command-runner.jar spark-submit --deploy-mode cluster --executor-cores 2 --class cs6240.imagePreprocess.Preprocess --master yarn s3://cs6240-yang-cai/imagePreprocess-1.0-jar-with-dependencies.jar s3://cs6240-yang-cai/ s3://cs6240-yang-cai/input s3n://cs6240-yang-cai/output_result s3n://cs6240-yang-cai/output_image 21 21 7 12500
+2017-11-16T22:58:46.100Z INFO HadoopJarStepRunner.Runner: startRun() called for s-1T3E37GWQTZL9 Child Pid: 8655
+INFO Synchronously wait child process to complete : hadoop jar /var/lib/aws/emr/step-runner/hadoop-...
+INFO waitProcessCompletion ended with exit code 0 : hadoop jar /var/lib/aws/emr/step-runner/hadoop-...
+INFO total process run time: 350 seconds
+2017-11-16T23:04:34.258Z INFO Step created jobs: 
+2017-11-16T23:04:34.258Z INFO Step succeeded with exitCode 0 and took 350 seconds

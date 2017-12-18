@@ -1,0 +1,5 @@
+To run the program:
+1.put the .bz2 files in the input directoty
+2.change the input directory in Makefile
+3."make alone" to run locally
+4.modify aws-related fields in Makefile, and ”make cloud” to run on the cloud

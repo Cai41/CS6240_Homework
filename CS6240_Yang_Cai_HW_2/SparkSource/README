@@ -1,0 +1,16 @@
+To run the program:
+1): mvn clean package
+2): put the input file into one folder(.i.e. input/)
+3). change the Makefile's local.input
+4).
+To run the no combiner version in standalone:
+make nocombiner
+
+To run the with combiner version in standalone:
+make withcombiner
+
+To run the in mapper combiner version in standalone:
+make inmappercombiner
+
+To run the secondary sort in standalone:
+make secondarysort
